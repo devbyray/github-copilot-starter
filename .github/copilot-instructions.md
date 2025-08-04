@@ -29,22 +29,25 @@ This repository contains guidelines and best practices for using GitHub Copilot 
 
 ## 📚 Table of Contents
 
-- **UI Guidelines**: Accessibility, design system, and styling principles for consistent, usable, and maintainable user interfaces.
-  [Read more](./instructions/ui-guidelines.instructions.md)
-- **Project and Folder Structure**: Key directories and their roles in the project.  
-  [Read more](./instructions/project-file-structure.instructions.md)
-- **Tools, Libraries & Frameworks Instructions**: Core technologies, frameworks, and their versions used in this repository.  
-  [Read more](./instructions/tools.instructions.md)
-- **Coding Instructions**: Practical coding standards for JavaScript/TypeScript, CSS, and components, including semicolons, quotes, and function-based patterns.  
-  [Read more](./instructions/coding.instructions.md)
-- **Commit Message Instructions**: Conventional Commits format for clear, consistent commit messages.  
-  [Read more](./instructions/commit.instructions.md)
-- **Testing & TDD Instructions**: Test-driven development process, recommended tools, and test naming conventions.  
-  [Read more](./instructions/testing.instructions.md)
-- **Configuration Files Instructions**: Standards for configuration files such as .editorconfig, Prettier, and ESLint.  
-  [Read more](./instructions/config.instructions.md)
-- **Best Practices Instructions**: Universal coding principles (SOLID, DRY, KISS) for maintainable and efficient code.  
-  [Read more](./instructions/best-practices.instructions.md)
+  - Coding standards ([coding.instructions.md](.github/instructions/coding.instructions.md))
+  - Accessibility ([accessibility.instructions.md](.github/instructions/accessibility.instructions.md))
+  - CSS ([css.instructions.md](.github/instructions/css.instructions.md))
+  - Tailwind CSS ([tailwind.instructions.md](.github/instructions/tailwind.instructions.md))
+  - HTML ([html.instructions.md](.github/instructions/html.instructions.md))
+  - UI guidelines ([ui-guidelines.instructions.md](.github/instructions/ui-guidelines.instructions.md))
+  - Commit messages ([commit.instructions.md](.github/instructions/commit.instructions.md))
+  - Best practices ([best-practices.instructions.md](.github/instructions/best-practices.instructions.md))
+  - Configuration files ([config.instructions.md](.github/instructions/config.instructions.md))
+  - C# standards ([csharp.instructions.md](.github/instructions/csharp.instructions.md))
+  - .NET standards ([dotnet.instructions.md](.github/instructions/dotnet.instructions.md))
+  - JavaScript/TypeScript standards ([javascript-typescript.instructions.md](.github/instructions/javascript-typescript.instructions.md))
+  - Vue standards ([vue.instructions.md](.github/instructions/vue.instructions.md))
+  - Nuxt.js standards ([nuxt.instructions.md](.github/instructions/nuxt.instructions.md))
+  - Markdown standards ([markdown.instructions.md](.github/instructions/markdown.instructions.md))
+  - Project structure ([project-file-structure.instructions.md](.github/instructions/project-file-structure.instructions.md))
+  - Security ([security.instructions.md](.github/instructions/security.instructions.md))
+  - Testing & TDD ([testing.instructions.md](.github/instructions/testing.instructions.md))
+  - Tooling ([tools.instructions.md](.github/instructions/tools.instructions.md))
 
 ---
 
