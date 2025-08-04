@@ -24,9 +24,6 @@ applyTo: "**"
       node: true,
       es6: true,
     },
-    extends: [
-      '@sbb-configs/shared-eslint'
-    ],
     parserOptions: {
       ecmaVersion: 2020,
       sourceType: 'module',
