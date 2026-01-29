@@ -2,9 +2,9 @@
 name: markdown-standards
 description: Documentation and content creation standards for Markdown files. Use when creating or editing .md files, writing documentation, README files, or when the user asks about Markdown formatting, content structure, front matter, or documentation best practices.
 metadata:
-  author: devbyray
-  version: "1.0"
-  format: "markdown, yaml"
+    author: devbyray
+    version: '1.0'
+    format: 'markdown, yaml'
 ---
 
 # Markdown Standards
@@ -14,12 +14,14 @@ Apply these standards when creating or editing Markdown documentation.
 ## Content Rules
 
 ### 1. Headings
+
 - Use appropriate heading levels (H2, H3, etc.) to structure content
 - **Do NOT use H1** - it will be generated from the title/front matter
 - Use headings hierarchically (don't skip levels)
 - Recommend restructuring if H4+ headings are needed
 
 **Good:**
+
 ```markdown
 ## Main Section
 
@@ -29,6 +31,7 @@ Apply these standards when creating or editing Markdown documentation.
 ```
 
 **Bad:**
+
 ```markdown
 # Title (don't use H1)
 
@@ -36,17 +39,19 @@ Apply these standards when creating or editing Markdown documentation.
 ```
 
 ### 2. Lists
+
 - Use `-` for bullet points
 - Use `1.` for numbered lists
 - Indent nested lists with two spaces
 - Ensure proper spacing between list items
 
 **Example:**
+
 ```markdown
 - First item
 - Second item
-  - Nested item
-  - Another nested item
+    - Nested item
+    - Another nested item
 - Third item
 
 1. First step
@@ -55,72 +60,84 @@ Apply these standards when creating or editing Markdown documentation.
 ```
 
 ### 3. Code Blocks
+
 - Use fenced code blocks with triple backticks
 - Always specify the language for syntax highlighting
 - Use inline code with single backticks for short snippets
 
 **Example:**
+
 ````markdown
 ```javascript
-const greeting = 'Hello, World!';
-console.log(greeting);
+const greeting = 'Hello, World!'
+console.log(greeting)
 ```
 
 Use `const` for immutable variables.
 ````
 
 ### 4. Links
+
 - Use descriptive link text
 - Ensure URLs are valid and accessible
 - Prefer relative links for internal documentation
 
 **Good:**
+
 ```markdown
 See the [installation guide](./docs/installation.md) for details.
 ```
 
 **Bad:**
+
 ```markdown
 Click [here](./docs/installation.md).
 ```
 
 ### 5. Images
+
 - Include descriptive alt text for accessibility
 - Use relative paths for local images
 - Optimize image sizes
 
 **Example:**
+
 ```markdown
 ![Project architecture diagram showing the main components](./assets/architecture.png)
 ```
 
 ### 6. Tables
+
 - Use proper markdown table syntax
 - Ensure proper alignment
 - Include headers
 
 **Example:**
+
 ```markdown
-| Feature | Status | Notes |
-| ------- | ------ | ----- |
-| Auth    | ✅     | Complete |
+| Feature | Status | Notes       |
+| ------- | ------ | ----------- |
+| Auth    | ✅     | Complete    |
 | API     | 🚧     | In progress |
 ```
 
 ## Formatting and Structure
 
 ### Line Length
+
 - Limit line length to 80-100 characters for readability
 - Maximum 400 characters per line
 - Use soft line breaks for long paragraphs
 
 ### Whitespace
+
 - Use blank lines to separate sections
 - Add blank line before and after code blocks
 - Add blank line before and after lists
 - Avoid excessive whitespace
 
 ### Front Matter
+
 Include YAML front matter at the beginning of the file:
 
 ```yaml
@@ -136,18 +153,21 @@ tags: [tag1, tag2]
 ## Content Quality
 
 ### Clarity
+
 - Write clear, concise sentences
 - Use active voice
 - Avoid jargon unless necessary
 - Define technical terms
 
 ### Structure
+
 - Start with a brief introduction
 - Use headings to organize content logically
 - Include examples where helpful
 - End with next steps or related resources
 
 ### Consistency
+
 - Use consistent terminology throughout
 - Follow the same formatting patterns
 - Maintain consistent heading capitalization
@@ -181,17 +201,17 @@ npm install project-name
 ## Usage
 
 ```javascript
-import { feature } from 'project-name';
+import { feature } from 'project-name'
 
-feature.doSomething();
+feature.doSomething()
 ```
 
 ## Configuration
 
 Available configuration options:
 
-| Option | Type | Default | Description |
-| ------ | ---- | ------- | ----------- |
+| Option  | Type   | Default | Description |
+| ------- | ------ | ------- | ----------- |
 | option1 | string | 'value' | Description |
 
 ## Contributing
@@ -235,10 +255,8 @@ Retrieves a list of users.
 
 ```json
 {
-  "users": [
-    { "id": 1, "name": "John Doe" }
-  ],
-  "total": 100
+	"users": [{ "id": 1, "name": "John Doe" }],
+	"total": 100
 }
 ```
 
@@ -252,11 +270,13 @@ curl https://api.example.com/users?limit=5
 ## Validation
 
 ### Tools
+
 - Use markdown linters (markdownlint)
 - Validate links with link checkers
 - Check spelling and grammar
 
 ### Checklist
+
 - ✅ No H1 headings in content
 - ✅ All code blocks have language specified
 - ✅ All images have alt text
@@ -269,6 +289,7 @@ curl https://api.example.com/users?limit=5
 ## When to Apply
 
 Apply these standards when:
+
 - Creating README files
 - Writing documentation
 - Creating guides and tutorials

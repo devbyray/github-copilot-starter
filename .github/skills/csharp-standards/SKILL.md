@@ -2,10 +2,10 @@
 name: csharp-standards
 description: C# coding standards and conventions including naming, formatting, and best practices. Use when working with .cs files, writing C# code, or when the user asks about C# naming conventions, code structure, XML documentation, or .NET development patterns.
 metadata:
-  author: devbyray
-  version: "1.0"
-  language: "csharp"
-  framework: "dotnet"
+    author: devbyray
+    version: '1.0'
+    language: 'csharp'
+    framework: 'dotnet'
 ---
 
 # C# Coding Standards & Conventions
@@ -15,6 +15,7 @@ Apply these standards when writing C# code for .NET projects.
 ## Naming Conventions
 
 ### 1. PascalCase
+
 Use for classes, interfaces, enums, methods, properties, and events:
 
 ```csharp
@@ -26,6 +27,7 @@ public string FirstName { get; set; }
 ```
 
 ### 2. camelCase
+
 Use for local variables, parameters, and private fields:
 
 ```csharp
@@ -39,6 +41,7 @@ private int _orderCount;  // Private field with underscore prefix
 ```
 
 ### 3. Interface Naming
+
 Prefix interfaces with `I`:
 
 ```csharp
@@ -50,24 +53,26 @@ public interface ILogger { }
 ## Access Modifiers
 
 ### 4. Explicit Access Modifiers
+
 Always specify access modifiers:
 
 **Good:**
+
 ```csharp
 public class UserService
 {
     private readonly IUserRepository _repository;
-    
+
     public UserService(IUserRepository repository)
     {
         _repository = repository;
     }
-    
+
     public async Task<User> GetUserAsync(int id)
     {
         return await _repository.FindByIdAsync(id);
     }
-    
+
     private bool ValidateUser(User user)
     {
         return !string.IsNullOrEmpty(user.Email);
@@ -76,6 +81,7 @@ public class UserService
 ```
 
 **Bad:**
+
 ```csharp
 class UserService  // Missing public
 {
@@ -86,6 +92,7 @@ class UserService  // Missing public
 ## Modern C# Features
 
 ### 5. Expression-Bodied Members
+
 Use for simple properties and methods:
 
 ```csharp
@@ -102,9 +109,11 @@ public User(string name) => Name = name;
 ```
 
 ### 6. Var Keyword
+
 Use `var` when the type is obvious:
 
 **Good:**
+
 ```csharp
 var user = new User();  // Type is obvious
 var count = GetCount();  // Return type is clear
@@ -112,16 +121,19 @@ var items = new List<string>();  // Type is clear
 ```
 
 **Questionable:**
+
 ```csharp
 var result = repository.GetData();  // What type is result?
 ```
 
 **Better:**
+
 ```csharp
 List<User> users = repository.GetUsers();  // Explicit when helpful
 ```
 
 ### 7. Pattern Matching
+
 Use modern pattern matching features:
 
 ```csharp
@@ -150,6 +162,7 @@ var shipping = customer switch
 ```
 
 ### 8. Null-Coalescing and Null-Conditional
+
 ```csharp
 // Null-coalescing
 var name = user?.Name ?? "Guest";
@@ -164,9 +177,11 @@ _cache ??= new Dictionary<string, object>();
 ## Code Structure
 
 ### 9. Always Use Braces
+
 Use braces even for single statements:
 
 **Good:**
+
 ```csharp
 if (user != null)
 {
@@ -180,15 +195,18 @@ foreach (var item in items)
 ```
 
 **Bad:**
+
 ```csharp
 if (user != null)
     ProcessUser(user);
 ```
 
 ### 10. Avoid Magic Numbers
+
 Use named constants or enums:
 
 **Bad:**
+
 ```csharp
 if (status == 1)
 {
@@ -197,6 +215,7 @@ if (status == 1)
 ```
 
 **Good:**
+
 ```csharp
 private const int ActiveStatus = 1;
 
@@ -207,6 +226,7 @@ if (status == ActiveStatus)
 ```
 
 **Better:**
+
 ```csharp
 public enum UserStatus
 {
@@ -222,6 +242,7 @@ if (status == UserStatus.Active)
 ```
 
 ### 11. String Literals
+
 Use double quotes for strings, single quotes for chars:
 
 ```csharp
@@ -232,6 +253,7 @@ char delimiter = ',';
 ## Documentation
 
 ### 12. XML Documentation Comments
+
 Document public APIs, classes, and methods:
 
 ```csharp
@@ -260,7 +282,7 @@ public class User
     /// Gets or sets the user's unique identifier.
     /// </summary>
     public int Id { get; set; }
-    
+
     /// <summary>
     /// Gets or sets the user's email address.
     /// </summary>
@@ -271,6 +293,7 @@ public class User
 ## Async/Await
 
 ### 13. Async Method Naming
+
 Suffix async methods with `Async`:
 
 ```csharp
@@ -286,6 +309,7 @@ public async Task SaveUserAsync(User user)
 ```
 
 ### 14. Async Best Practices
+
 ```csharp
 // Always await async calls
 public async Task ProcessOrderAsync(Order order)
@@ -375,7 +399,7 @@ namespace MyApp.Services
 
             var createdUser = await _repository.AddAsync(user);
             _logger.LogInformation("User created with ID {UserId}", createdUser.Id);
-            
+
             return createdUser;
         }
 
@@ -384,14 +408,14 @@ namespace MyApp.Services
         /// </summary>
         private bool IsValidUser(User user)
         {
-            return !string.IsNullOrWhiteSpace(user.Email) 
+            return !string.IsNullOrWhiteSpace(user.Email)
                 && !string.IsNullOrWhiteSpace(user.Name);
         }
 
         /// <summary>
         /// Gets the user's display name.
         /// </summary>
-        public string GetDisplayName(User user) => 
+        public string GetDisplayName(User user) =>
             user?.Name ?? "Guest";
     }
 }
@@ -413,6 +437,7 @@ namespace MyApp.Services
 ## When to Apply
 
 Apply these standards when:
+
 - Writing C# code
 - Creating classes and interfaces
 - Reviewing C# code

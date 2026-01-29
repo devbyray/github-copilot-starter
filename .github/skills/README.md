@@ -10,29 +10,29 @@ Agent Skills are modular, discoverable instructions that AI agents can load dyna
 
 ### Language & Framework Standards
 
-| Skill | Description | When Used |
-|-------|-------------|-----------|
+| Skill                                                                 | Description                            | When Used                               |
+| --------------------------------------------------------------------- | -------------------------------------- | --------------------------------------- |
 | [javascript-typescript-standards](./javascript-typescript-standards/) | JavaScript/TypeScript coding standards | Working with .js, .ts, .jsx, .tsx files |
-| [csharp-standards](./csharp-standards/) | C# coding conventions | Working with .cs files |
-| [css-standards](./css-standards/) | CSS/SCSS/SASS best practices | Working with stylesheets |
-| [html-standards](./html-standards/) | HTML semantic markup & accessibility | Working with HTML templates |
-| [markdown-standards](./markdown-standards/) | Markdown documentation standards | Writing .md files |
+| [csharp-standards](./csharp-standards/)                               | C# coding conventions                  | Working with .cs files                  |
+| [css-standards](./css-standards/)                                     | CSS/SCSS/SASS best practices           | Working with stylesheets                |
+| [html-standards](./html-standards/)                                   | HTML semantic markup & accessibility   | Working with HTML templates             |
+| [markdown-standards](./markdown-standards/)                           | Markdown documentation standards       | Writing .md files                       |
 
 ### Framework-Specific Skills
 
-| Skill | Description | When Used |
-|-------|-------------|-----------|
-| [vue-development](./vue-development/) | Vue.js 3 Composition API standards | Working with .vue components |
-| [nuxt-development](./nuxt-development/) | Nuxt.js 3 development patterns | Building Nuxt applications |
-| [dotnet-development](./dotnet-development/) | .NET project structure & patterns | .NET/ASP.NET Core projects |
-| [tailwind-css](./tailwind-css/) | Tailwind CSS v4+ usage | Using Tailwind utility classes |
+| Skill                                       | Description                        | When Used                      |
+| ------------------------------------------- | ---------------------------------- | ------------------------------ |
+| [vue-development](./vue-development/)       | Vue.js 3 Composition API standards | Working with .vue components   |
+| [nuxt-development](./nuxt-development/)     | Nuxt.js 3 development patterns     | Building Nuxt applications     |
+| [dotnet-development](./dotnet-development/) | .NET project structure & patterns  | .NET/ASP.NET Core projects     |
+| [tailwind-css](./tailwind-css/)             | Tailwind CSS v4+ usage             | Using Tailwind utility classes |
 
 ### Workflow Skills
 
-| Skill | Description | When Used |
-|-------|-------------|-----------|
-| [testing-tdd](./testing-tdd/) | Test-Driven Development workflow | Writing tests, implementing TDD |
-| [commit-conventions](./commit-conventions/) | Conventional Commits standard | Making git commits |
+| Skill                                       | Description                      | When Used                       |
+| ------------------------------------------- | -------------------------------- | ------------------------------- |
+| [testing-tdd](./testing-tdd/)               | Test-Driven Development workflow | Writing tests, implementing TDD |
+| [commit-conventions](./commit-conventions/) | Conventional Commits standard    | Making git commits              |
 
 ## Skill Structure
 

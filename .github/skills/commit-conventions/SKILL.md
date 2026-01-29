@@ -2,10 +2,10 @@
 name: commit-conventions
 description: Standards for writing clear and consistent commit messages using Conventional Commits format. Use when making git commits, reviewing commit history, creating pull requests, or when the user asks about commit message formatting, git workflows, or version control best practices.
 metadata:
-  author: devbyray
-  version: "1.0"
-  standard: "conventional-commits"
-  tool: "git"
+    author: devbyray
+    version: '1.0'
+    standard: 'conventional-commits'
+    tool: 'git'
 ---
 
 # Commit Message Conventions
@@ -25,6 +25,7 @@ Writing clear and consistent commit messages is essential for maintaining an und
 ### Components
 
 **`<type>`** (required) - The type of change:
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -37,20 +38,24 @@ Writing clear and consistent commit messages is essential for maintaining an und
 - `build`: Build system or dependency changes
 
 **`[scope]`** (optional) - The component, module, or section affected:
+
 - Examples: `(auth)`, `(api)`, `(ui)`, `(header)`, `(footer)`
 
 **`<short description>`** (required) - Brief description of the change:
+
 - Max 50-72 characters
 - Use present tense
 - Lowercase start (after type)
 - No period at the end
 
 **`[body]`** (optional) - Detailed explanation:
+
 - Wrap at 72 characters
 - Explain what and why, not how
 - Separate from description with blank line
 
 **`[footer]`** (optional) - Breaking changes or issue references:
+
 - `BREAKING CHANGE:` for breaking changes
 - Issue references: `Closes #123`, `Fixes #456`
 
@@ -65,41 +70,49 @@ Writing clear and consistent commit messages is essential for maintaining an und
 ## Examples
 
 ### New Feature
+
 ```
 feat(header): add dropdown menu to navbar
 ```
 
 ### Bug Fix
+
 ```
 fix(api): resolve error when fetching user data
 ```
 
 ### Documentation
+
 ```
 docs(readme): add installation instructions
 ```
 
 ### Code Refactor
+
 ```
 refactor(utils): restructure formatting logic
 ```
 
 ### Tests
+
 ```
 test(auth): add tests for password recovery
 ```
 
 ### Maintenance
+
 ```
 chore(dependencies): update axios to v1.3.0
 ```
 
 ### Performance
+
 ```
 perf(images): optimize image loading with lazy loading
 ```
 
 ### Breaking Change
+
 ```
 feat(api): change authentication endpoint structure
 
@@ -108,6 +121,7 @@ Clients must update to handle the new format.
 ```
 
 ### With Issue Reference
+
 ```
 fix(login): prevent memory leak on logout
 
@@ -118,6 +132,7 @@ Fixes #234
 ```
 
 ### Multiple Scopes
+
 ```
 feat(api, ui): add user profile avatar upload
 ```
@@ -148,6 +163,7 @@ feat(api, ui): add user profile avatar upload
 ## When to Apply
 
 Apply these conventions when:
+
 - Making any git commit
 - Creating pull requests
 - Reviewing commit history
@@ -158,6 +174,7 @@ Apply these conventions when:
 ## Tools
 
 Consider using these tools to enforce commit conventions:
+
 - **commitlint**: Lint commit messages
 - **husky**: Git hooks for validation
 - **commitizen**: Interactive commit message builder

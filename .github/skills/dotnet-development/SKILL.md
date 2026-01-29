@@ -2,11 +2,11 @@
 name: dotnet-development
 description: .NET coding standards and conventions including project structure, dependency injection, and best practices. Use when working with .NET projects, ASP.NET Core, or when the user asks about .NET architecture, dependency injection, async patterns, or project organization.
 metadata:
-  author: devbyray
-  version: "1.0"
-  platform: "dotnet"
-  framework: "aspnet-core"
-  depends-on: "csharp-standards"
+    author: devbyray
+    version: '1.0'
+    platform: 'dotnet'
+    framework: 'aspnet-core'
+    depends-on: 'csharp-standards'
 ---
 
 # .NET Development Standards
@@ -128,10 +128,10 @@ public class UserService : IUserService
     public async Task<User> CreateUserAsync(User user)
     {
         _logger.LogInformation("Creating user {Email}", user.Email);
-        
+
         var createdUser = await _repository.AddAsync(user);
         await _emailService.SendWelcomeEmailAsync(user.Email);
-        
+
         return createdUser;
     }
 }
@@ -206,7 +206,7 @@ public class OrderService : IOrderService
 
         // Process payment
         var paymentResult = await _paymentService.ProcessPaymentAsync(order.PaymentInfo);
-        
+
         if (!paymentResult.Success)
         {
             throw new PaymentFailedException(paymentResult.Message);
@@ -250,12 +250,12 @@ public async Task<User> GetUserByIdAsync(int id, CancellationToken cancellationT
 {
     var user = await _dbContext.Users
         .FirstOrDefaultAsync(u => u.Id == id, cancellationToken);
-    
+
     if (user == null)
     {
         throw new NotFoundException($"User with ID {id} not found.");
     }
-    
+
     return user;
 }
 ```
@@ -509,6 +509,7 @@ namespace MyApp.Api.Controllers
 ## When to Apply
 
 Apply these standards when:
+
 - Creating .NET projects
 - Building ASP.NET Core APIs
 - Implementing services and repositories

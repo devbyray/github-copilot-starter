@@ -1,6 +1,6 @@
 ---
 description: Coding standards and conventions for the project, including JavaScript/TypeScript, CSS, and component structure.
-applyTo: "**"
+applyTo: '**'
 ---
 
 ## 🧑‍💻 Coding Standards & Conventions
@@ -19,6 +19,7 @@ applyTo: "**"
 **Note**: Most language-specific guidelines have been migrated to Agent Skills for better performance:
 
 ### Agent Skills (Dynamic Loading)
+
 - [JavaScript/TypeScript Standards](../skills/javascript-typescript-standards/) - ES2022, Node.js, async/await
 - [Vue Development](../skills/vue-development/) - Vue 3 Composition API
 - [Nuxt Development](../skills/nuxt-development/) - Nuxt 3, SSR/SSG
@@ -32,6 +33,7 @@ applyTo: "**"
 - [Commit Conventions](../skills/commit-conventions/) - Conventional Commits
 
 ### Custom Instructions (Always Active)
+
 - [Best Practices](./best-practices.instructions.md) - SOLID, DRY, KISS
 - [Security](./security.instructions.md) - OWASP Top 10
 - [Accessibility](./accessibility.instructions.md) - Universal accessibility

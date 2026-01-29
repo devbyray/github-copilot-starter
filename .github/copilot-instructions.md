@@ -2,18 +2,16 @@
 
 > A guide to help us get the best out of GitHub Copilot across our projects.
 
-
 ## 🧱 Project Overview
 
 This repository is a starter kit for rapid prototyping with modern web technologies. It aims to provide a maintainable, accessible, and efficient foundation for full-stack development.
 
 **Tech stack:** React (frontend), Node.js (backend), Vitest (testing), CSS modules.
 
-
-
 ## 🎯 Purpose
 
 This repository contains guidelines and best practices for using GitHub Copilot in our team. Reference these instruction files for:
+
 - Readable & maintainable code
 - Efficient performance
 - Consistent style across projects
@@ -26,10 +24,10 @@ This repository contains guidelines and best practices for using GitHub Copilot 
 
 ---
 
-
 ## 📚 Guidelines Structure
 
 ### 🎯 Agent Skills (Dynamic Loading)
+
 Language and framework-specific guidelines that load only when relevant:
 
 - **JavaScript/TypeScript** - [javascript-typescript-standards](skills/javascript-typescript-standards/)
@@ -47,6 +45,7 @@ Language and framework-specific guidelines that load only when relevant:
 [📖 Learn more about Agent Skills](skills/README.md)
 
 ### 🌐 Custom Instructions (Always Active)
+
 Universal principles that apply to all code:
 
 - **Coding Standards** - [coding.instructions.md](instructions/coding.instructions.md)
@@ -60,6 +59,7 @@ Universal principles that apply to all code:
 ---
 
 ## User interactions
+
 - Ask questions if you are unsure about the implementation details, design choices, or need clarification on the requirements
 - Always answer in the same language as the question, but use English for the generated content like code, comments or docs
 - Do not adopt a specific tone or persona; focus on technical accuracy.
