@@ -1,9 +1,33 @@
 ---
-description: Guidelines for writing JavaScript/TypeScript code that is simple, readable, and maintainable. Focus on structure, organization, naming conventions, and performance.
-applyTo: "**/*.{js,jsx,ts,tsx,svelte,vue,cjs,mjs}"
+description: '⚠️ DEPRECATED: This instruction file has been migrated to Agent Skills. See .github/skills/javascript-typescript-standards/'
+applyTo: '**/*.{js,jsx,ts,tsx,svelte,vue,cjs,mjs}'
+deprecated: true
+migrated-to: '.github/skills/javascript-typescript-standards/SKILL.md'
 ---
 
+# ⚠️ DEPRECATED
+
+This instruction file has been migrated to **Agent Skills** for better performance and dynamic loading.
+
+**New location**: [.github/skills/javascript-typescript-standards/SKILL.md](../skills/javascript-typescript-standards/SKILL.md)
+
+## Why the Migration?
+
+Agent Skills provide:
+
+- 🚀 Dynamic loading (only when working with JS/TS files)
+- 📦 ~70% reduction in constant context usage
+- 🔍 Better discoverability
+- 📚 Support for executable scripts and references
+
+Please refer to the new skill for all JavaScript/TypeScript standards.
+
+---
+
+# Original Content (For Reference)
+
 ## Coding standards
+
 - Use JavaScript with ES2022 features and Node.js (22+) ESM modules
 - Use Node.js built-in modules and avoid external dependencies where possible
 - Ask the user if you require any additional dependencies before adding them
@@ -26,6 +50,7 @@ applyTo: "**/*.{js,jsx,ts,tsx,svelte,vue,cjs,mjs}"
 - Write clear, concise JSDoc/TSDoc comments
 
 ## Testing
+
 - Use Vitest for testing
 - Write tests for all new features and bug fixes
 - Ensure tests cover edge cases and error handling

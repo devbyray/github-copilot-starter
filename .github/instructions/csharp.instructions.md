@@ -1,7 +1,21 @@
 ---
-description: C# coding standards and conventions for the project.
-applyTo: "**/*.cs"
+description: '⚠️ DEPRECATED: This instruction file has been migrated to Agent Skills. See .github/skills/csharp-standards/'
+applyTo: '**/*.cs'
+deprecated: true
+migrated-to: '.github/skills/csharp-standards/SKILL.md'
 ---
+
+# ⚠️ DEPRECATED
+
+This instruction file has been migrated to **Agent Skills** for better performance and dynamic loading.
+
+**New location**: [.github/skills/csharp-standards/SKILL.md](../skills/csharp-standards/SKILL.md)
+
+Please refer to the new skill for all C# standards.
+
+---
+
+# Original Content (For Reference)
 
 # C# Coding Standards & Conventions
 

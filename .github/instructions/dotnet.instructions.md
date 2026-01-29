@@ -1,7 +1,21 @@
 ---
-description: .NET coding standards and conventions for the project.
-applyTo: "**/*.cs"
+description: '⚠️ DEPRECATED: This instruction file has been migrated to Agent Skills. See .github/skills/dotnet-development/'
+applyTo: '**/*.cs'
+deprecated: true
+migrated-to: '.github/skills/dotnet-development/SKILL.md'
 ---
+
+# ⚠️ DEPRECATED
+
+This instruction file has been migrated to **Agent Skills** for better performance and dynamic loading.
+
+**New location**: [.github/skills/dotnet-development/SKILL.md](../skills/dotnet-development/SKILL.md)
+
+Please refer to the new skill for all .NET development standards.
+
+---
+
+# Original Content (For Reference)
 
 # .NET Coding Standards & Conventions
 

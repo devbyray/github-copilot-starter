@@ -1,7 +1,21 @@
 ---
-description: 'Documentation and content creation standards'
+description: '⚠️ DEPRECATED: This instruction file has been migrated to Agent Skills. See .github/skills/markdown-standards/'
 applyTo: '**/*.md'
+deprecated: true
+migrated-to: '.github/skills/markdown-standards/SKILL.md'
 ---
+
+# ⚠️ DEPRECATED
+
+This instruction file has been migrated to **Agent Skills** for better performance and dynamic loading.
+
+**New location**: [.github/skills/markdown-standards/SKILL.md](../skills/markdown-standards/SKILL.md)
+
+Please refer to the new skill for all Markdown standards.
+
+---
+
+# Original Content (For Reference)
 
 ## Markdown Content Rules
 
