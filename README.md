@@ -37,12 +37,11 @@ GitHub Copilot Starter is a template repository for configuring, customizing, an
 - **Specification-driven workflow**: Optionally use the included workflow for requirements, design, implementation, and validation
 - **No fixed tech stack**: Adapt to any language, framework, or toolchain
 
-## Project Stskills/` — Agent Skills (dynamically loaded when relevant)
+## Project Structure
 
+- `.github/skills/` — Agent Skills (dynamically loaded when relevant)
 - `.github/instructions/` — Custom instructions (always active, universal principles)
 - `.github/prompts/` — Custom prompts for specific workflows
-
-- `.github/instructions/` — Core instruction files (edit or add your own)
 - `/src`, `/tests`, `/public`, `/config`, `/docs` — Example folders for typical projects (customize or remove as needed)
 
 ## Getting Started
@@ -50,15 +49,17 @@ GitHub Copilot Starter is a template repository for configuring, customizing, an
 1. **Clone the repository**
     ```zsh
     git clone https://github.com/devbyrayray/github-copilot-starter.git
-    cd github-copilot-starskills and instructions**
+    cd github-copilot-starter
+    ```
+2. **Review skills and instructions**
     - Browse Agent Skills in `.github/skills/` for language/framework-specific standards
     - Edit custom instructions in `.github/instructions/` for universal principles
     - Customize prompts in `.github/prompts/` for specific workflows
-    ```
-2. **Integrate with your project**
+
+3. **Integrate with your project**
     - Copy or merge the skills, instructions, and prompts into your own repository
     - Adjust folder structure as needed for your tech stack
-3. Agent Skills (Dynamic Loading)
+## Agent Skills (Dynamic Loading)
 
 Agent Skills are modular, discoverable instructions that AI agents load dynamically based on the task at hand. Skills are located in `.github/skills/` and follow the [Agent Skills specification](https://agentskills.io/specification).
 
@@ -100,8 +101,11 @@ Universal principles and guidelines that apply to all code are located in `.gith
 - [Configuration](.github/instructions/config.instructions.md) - Configuration file standards
 - [Project Structure](.github/instructions/project-file-structure.instructions.md) - Repository organization
 - [Tooling](.github/instructions/tools.instructions.md) - Development tools and workflows
+- [Testing & TDD](.github/instructions/testing.instructions.md) - Testing strategies and TDD
+- [Markdown Standards](.github/instructions/markdown.instructions.md) - Documentation standards
+- [Nuxt.js Standards](.github/instructions/nuxt.instructions.md) - Nuxt.js specific guidelines
 
-These instructions remain as custom instructions because they contain universal architecture patterns that should always be considered. - Nuxt.js standards ([nuxt.instructions.md](.github/instructions/nuxt.instructions.md)) - Markdown standards ([markdown.instructions.md](.github/instructions/markdown.instructions.md)) - Project structure ([project-file-structure.instructions.md](.github/instructions/project-file-structure.instructions.md)) - Security ([security.instructions.md](.github/instructions/security.instructions.md)) - Testing & TDD ([testing.instructions.md](.github/instructions/testing.instructions.md)) - Tooling ([tools.instructions.md](.github/instructions/tools.instructions.md))- Add, remove, or modify instructions to fit your project
+Add, remove, or modify instructions to fit your project.
 
 ## Custom Prompts
 
